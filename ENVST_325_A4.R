@@ -59,7 +59,6 @@ timeCheck900 <- function(x){
   intervals <- x[-length(x)] %--% x[-1]
   interval_times <- int_length(intervals)
   intervals[interval_times != 900]
-  
 }
 # run on weather data
 timeCheck900(weather$dateF)
